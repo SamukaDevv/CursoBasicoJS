@@ -64,10 +64,10 @@ let x = 10; //aqui é 10
        em hípotese alguma ela podera ser alterada   */
 
 //O valor sempre sera 10 idependente das mudanças feitas no codigo abaixo dele
-let x = 10; //aqui é 10
+const a = 10; //aqui é 10
 {
     // apenas nesse bloco de código que sera valor 2
-    let x = 2; //aqui continuara sendo 10
+    const a = 2; //aqui continuara sendo 10
 }
 
         
