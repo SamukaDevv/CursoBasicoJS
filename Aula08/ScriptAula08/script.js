@@ -1,3 +1,4 @@
+
 /*  FUNÇÕES
 Uma função JavaScript  é um bloco de códigos projetados para executar um
 tarfa específica.
