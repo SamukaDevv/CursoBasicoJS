@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+      <!-- Onload é um evento que ocorrerá quando a página terminar de carregadar -->  
+      <!-- onresize é um evento que ocorrerá quando a página tiver um  redimencionamento -->
+<body onload="alert('Terminou de carregar')"
+
+      onresize="console.log('Houve um redimencionamento')"
+    style="text-align: center; ">
+    
+
+    <h1>Eventos</h1>
+    <br><br>
+
+    <h2>Eventos JavaScript</h2>
+    <p id="texto"></p>
+
+    <!--Evento de click-->
+    <button onclick="eventoClick()" >De um click</button>
+
+    <!--Evento de 2 click-->
+    <button  ondblclick="eventoDblClick()">De dois click</button>
+    <br><br>
+
+    <!--"onchange": Evento para mudar algum  conteúdo-->
+    <select id="itens" onchange="mudou()" >
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
+
+<!--
+    --------- EVENTOS DE CLIKS ATRAVÉS DO MOUSE -----------
+
+    "onmouseover": Evento que ao pasar mouse em cima de um conteúdo
+    "onmouseout": Evento que ao remover mouse de algum conteúdo
+    "onmousemove": Evento que ao mover mouse dentro de algum conteúdo
+    "onmousedown": Evento que ao clicar e precionar com o mouse, fará algo
+    "onmouseup": Evento que ao parar de percionar com o bota]ão do mouse, fará algo
+    "onfocus": Evento que irá focar em algum conteúdo clicado pelo mouse, válido para inputs
+    "onblur": Evento que irá defocar de algum conteúdo au clicar fora  com o mouse
+-->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; ">
+        <div id="teste"
+            onmouseover="viraRoxo()" 
+            onmouseout="viraAzul()"
+            onmousemove="adcionarTexto()"
+            style="margin:auto auto; width:40vw; height:200px; background: blue;">
+<!--  onmouseover="viraRoxo()"-->       <!--Evento de descanço do mouse-->
+<!--  onmouseout="viraAzul()"-->        <!--Evento ao remover descanço do mouse-->
+<!--  onmousemove="adcionarTexto()"-->  <!--Evento ao mover mouse-->  
+            
+
+            <h3>Evento1</h3>
+        </div>
+
+        <div id="teste2"
+            style="margin:auto auto; width:40vw; height:200px; background: blue;">
+            <h3>Evento2</h3>
+        </div><br>
+
+
+     
+    </div>
+
+
+
+    <!--
+    --------- EVENTOS DE CLIKS ATRAVÉS DO TECLADO -----------
+
+    "onkeydown": Evento qua contecera algo ao pressionar alguma tecla
+    "onkeypress": Evento qua contecera algo ao pressionar alguma tecla por alguns intantes
+    "onkeyup": Evento qua contecera algo soltar a tecla precionada
+
+-->
+
+    <div>
+        <input onkeypress="teclaPressionada()" id="campoTexto3" style="padding: 80px; width:20vw;  font-size: 20px; margin-top: 50px;margin: 40px 100px;"  type="text" placeholder="Digite alguma coisa" value="Já vem con texto">
+
+        
+    </div>
+
+    
+    <script src="ScriptAula10/script.js"></script>
+</body>
+</html>

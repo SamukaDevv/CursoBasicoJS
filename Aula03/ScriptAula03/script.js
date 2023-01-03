@@ -7,16 +7,16 @@ c = 8;
 //Declarações de variaves uma do lado da outra
 let d, e, f; d = 2; e = 3; f = 4;
 
-/*Amabas as formas de declarar variaves, são possiveis */
+/*Ambas as formas de declarar variaves, são possiveis */
 
 
         /*JavaScript ignora espaços*/ 
-        /*Porém, utilizar espaços, fara com que o código tenha uma melhor compeenção */
+        /*Porém, utilizar espaços, fará com que o código tenha uma melhor compeenção */
 
-// então escrever:
+// então, escrever o código sim espaço:
+let pessoa="Dimitri";        
+// é o mesmo que escrever sem. Porém, com um melhor visual e compreenção:
 let pessoa = "Dimitri" ;
-// é o mesmo que escrever:
-let pessoa="Dimitri";
 
         /*!!! Alerta !!!*/
 // Um erro ocorrera, pois a variavel "pessoal", está se repetindo 
